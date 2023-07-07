@@ -24,15 +24,15 @@
 <meta property="og:site_name" content="山有木兮木有枝，心悦君兮君未知">
 <meta property="og:description" content="三剑客grep丶awk丶sed正则表达式 1.1 什么是正则表达式  匹配一些有规律的东西，比如手机号丶日志文件等 正则表达式regular expression (RE) 正则使用：使用一些符号表达重复出现大小写，开头&#x2F;结尾含义  1.2 应用场景    正则表达式 Linux三剑客使用，或者一些开发语言(python,golang…)    应用场景 过滤有规律的内容，尤其是日志">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://sm.ms/image/JWEUfjDHGdhlwNi">
-<meta property="og:image" content="https://sm.ms/image/WvfJxtU6C1ZK7Nd">
-<meta property="og:image" content="https://sm.ms/image/ZqPkL2SydC8xQjm">
-<meta property="og:image" content="https://sm.ms/image/Rgnm7lUWc3V5GaX">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/JWEUfjDHGdhlwNi.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/WvfJxtU6C1ZK7Nd.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/ZqPkL2SydC8xQjm.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/Rgnm7lUWc3V5GaX.png">
 <meta property="article:published_time" content="2023-07-07T00:21:35.000Z">
-<meta property="article:modified_time" content="2023-07-07T02:36:28.483Z">
+<meta property="article:modified_time" content="2023-07-07T03:22:32.546Z">
 <meta property="article:author" content="酒酒">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://sm.ms/image/JWEUfjDHGdhlwNi">
+<meta name="twitter:image" content="https://s2.loli.net/2023/07/07/JWEUfjDHGdhlwNi.png">
   
   <!-- 站点验证相关 -->
   
@@ -155,7 +155,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1688697388483"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1688700152546"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -435,9 +435,9 @@
 <td></td>
 </tr>
 </tbody></table>
-<p><img src="https://sm.ms/image/JWEUfjDHGdhlwNi"></p>
+<p><img src="https://s2.loli.net/2023/07/07/JWEUfjDHGdhlwNi.png"></p>
 <p>5） ？ 前一个字符出现0次或者1次</p>
-<p><img src="https://sm.ms/image/WvfJxtU6C1ZK7Nd"></p>
+<p><img src="https://s2.loli.net/2023/07/07/WvfJxtU6C1ZK7Nd.png"></p>
 <p>6） 扩展正则总结</p>
 <table>
 <thead>
@@ -555,7 +555,7 @@
 </tr>
 </tbody></table>
 <p>-o                        精确过滤</p>
-<p><img src="https://sm.ms/image/ZqPkL2SydC8xQjm"></p>
+<p><img src="https://s2.loli.net/2023/07/07/ZqPkL2SydC8xQjm.png"></p>
 <p>sed</p>
 <p>字符串替换</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">语法：sed <span class="string">&#x27;s/原字符串/替换字符串/&#x27;</span> [文件路径]</span><br><span class="line"><span class="comment">#注意：</span></span><br><span class="line"><span class="comment">#若存在特殊字符，需要使用反斜线\进行转义；</span></span><br><span class="line"><span class="comment">#若存在单引号，外层的单引号改成双引号 sed &quot;s/原字符串/替换字符串/&quot;</span></span><br><span class="line"><span class="comment">#删除某一个字符串可写为：sed &#x27;s/原字符串//g&#x27;</span></span><br><span class="line">替换所有匹配到的关键字：</span><br><span class="line">sed <span class="string">&#x27;s/原字符串/替换字符串/g&#x27;</span></span><br><span class="line"><span class="comment"># 在末尾加g替换每一个匹配的关键字,否则只替换每行的第一个</span></span><br><span class="line"><span class="comment">#替换文件整行内容：</span></span><br><span class="line">例：把unr第四行替换成www.baidu</span><br><span class="line">[root@hadoop102 ~]<span class="comment">#sed -i &#x27;4c\www.baidu&#x27; unr   </span></span><br><span class="line">选项	功能</span><br><span class="line">-e	直接在命令行模式上进行sed动作编辑，此为默认选项</span><br><span class="line">-f	将sed的动作写在一个文件内，用–f filename 执行filename内的sed动作</span><br><span class="line">-i	直接修改文件内容</span><br><span class="line">-n	只打印模式匹配的行</span><br><span class="line">-r	支持扩展正则表达式</span><br><span class="line">-h --<span class="built_in">help</span>	显示帮助</span><br><span class="line">-v --version	显示版本信息</span><br><span class="line"><span class="comment">#命令：</span></span><br><span class="line">a\	在当前行下面插入文本</span><br><span class="line">i\	在当前行上面插入文本</span><br><span class="line">c\	把选定的行改为新的文本</span><br><span class="line">d	删除，删除选择的行</span><br><span class="line">D	删除模板块的第一行</span><br><span class="line">s	替换指定字符</span><br><span class="line">h	拷贝模板块的内容到内存中的缓冲区</span><br><span class="line">H	追加模板块的内容到内存中的缓冲区</span><br><span class="line">g	获得内存缓冲区的内容，并替代当前模板块中的文本</span><br><span class="line">G	获得内存缓冲区的内容，并追加到当前模板块文本的后面</span><br><span class="line">l	列表不能打印字符的清单</span><br><span class="line">n	读取下一个输入行，用下一个命令处理新的行而不是用第一个命令</span><br><span class="line">N	追加下一个输入行到模板块后面并在二者间嵌入一个新行，改变当前行号码</span><br><span class="line">p	打印模板块的行</span><br><span class="line">P	打印模板块的第一行</span><br><span class="line">q	退出Sed</span><br><span class="line">b	lable 分支到脚本中带有标记的地方，如果分支不存在则分支到脚本的末尾</span><br><span class="line">r	file 从file中读行</span><br><span class="line">t	label <span class="keyword">if</span>分支，从最后一行开始，条件一旦满足或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾</span><br><span class="line">T	label 错误分支，从最后一行开始，一旦发生错误或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾</span><br><span class="line">w	file 写并追加模板块到file末尾</span><br><span class="line">W	file 写并追加模板块的第一行到file末尾</span><br><span class="line">!	表示后面的命令对所有没有被选定的行发生作用</span><br><span class="line">=	打印当前行号</span><br><span class="line"><span class="comment">#	把注释扩展到下一个换行符以前</span></span><br><span class="line"><span class="comment">#sed 替换标记 (s 替换脚本命令)</span></span><br><span class="line">标记	作用</span><br><span class="line">n	1~512 之间的数字，表示指定要替换的字符串出现第几次时才进行替换，例如，一行中有 3 个 A，但用户只想替换第二个 A，这时就用到这个标记</span><br><span class="line">g	行内全局替换，如果没有 g，则只会在第一次匹配成功时做替换操作。例如，一行数据中有 3 个 A，则只会替换第一个 A</span><br><span class="line">p	会打印与替换命令中指定的模式匹配的行。此标记通常与 -n 选项一起使用</span><br><span class="line">w	将缓冲区中的内容写到指定的 file 文件中</span><br><span class="line">x	互换模板块中的文本和缓冲区中的文本</span><br><span class="line">y	把一个字符翻译为另外的字符（但是不用于正则表达式）</span><br><span class="line">\n	匹配第n个子串，该子串之前在pattern中用 () 指定</span><br><span class="line">&amp;	已匹配字符串标记，用正则表达式匹配的内容进行替换</span><br><span class="line">\	转义（转义替换部分包含：&amp;、\ 等）</span><br></pre></td></tr></table></figure>
@@ -728,7 +728,7 @@
 <figure class="highlight bash"><figcaption><span>awk 是一个按需求格式化文本再进行输出的工具。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">  awk 是一个按需求格式化文本再进行输出的工具。</span><br><span class="line">  和 sed 命令类似，awk 命令也是逐行扫描文件（从第 1 行到最后一行），寻找含有目标文本的行，如果匹配成功，则会在该行上执行用户想要的操作；反之，则不对行做任何处理。</span><br><span class="line">  awk -f 脚本文件 数据文件  执行awk脚本文件</span><br><span class="line">  awk 的应用场景：</span><br><span class="line">看下 awk 能干些什么事情：</span><br><span class="line">1. 能够将给定的文本内容，按照我们期望的格式输出显示，打印成报表。</span><br><span class="line">2. 分析处理系统日志，快速地分析挖掘我们关心的数据，并生成统计信息；</span><br><span class="line">3. 方便地用来统计数据，比如网站的访问量，访问的 IP 量等；</span><br><span class="line">4. 通过各种工具的组合，快速地汇总分析系统的运行信息，让你对系统的运行了如指掌；</span><br><span class="line">5. 强大的脚本语言表达能力，支持循环、条件、数组等语法，助你分析更加复杂的数据；</span><br><span class="line">awk 不是万能的，它比较擅长处理格式化的文本，比如 日志、 csv 格式数据等；</span><br></pre></td></tr></table></figure>
 
 <p>awk 的工作流程图如图</p>
-<p><img src="https://sm.ms/image/Rgnm7lUWc3V5GaX"></p>
+<p><img src="https://s2.loli.net/2023/07/07/Rgnm7lUWc3V5GaX.png"></p>
 <p>工作原理：</p>
 <p>逐行读取文本，默认以空格或tab键为分隔符进行分隔，将分隔所得的各个字段保存到内建变量中，并按模式或者条件执行编辑命令。</p>
 <p>在使用awk命令的过程中,可以使用逻辑操作符“&amp;&amp;”表示“与”、“||”表示“或”、“!”表示“非”；还可以进行简单的数学运算，如+、-、*、&#x2F;、%、^分别表示加、减、乘、除、取余和乘方。</p>
@@ -1604,7 +1604,7 @@
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-07-07T02:36:28.483Z" itemprop="dateModified">最后编辑：2023-07-07</time>
+                    <time datetime="2023-07-07T03:22:32.546Z" itemprop="dateModified">最后编辑：2023-07-07</time>
                 </div>
             </div>
         </footer>

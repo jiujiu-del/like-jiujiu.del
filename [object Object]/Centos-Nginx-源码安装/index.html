@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   
   
-  <title>NodeJs的安装及配置环境变量 | 山有木兮木有枝，心悦君兮君未知</title>
+  <title>Centos_Nginx-源码安装 | 山有木兮木有枝，心悦君兮君未知</title>
   
   <meta name="author" content="酒酒" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,33 +17,25 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="NodeJs 的安装及配置环境变量一、Node.js 下载与安装二、Node.js 环境变量配置三、国内镜像网站配置 NodeJs 的安装及配置环境变量 一、Node.js 下载与安装 进入官网地址下载安装包 https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;download&#x2F;  下载完成后，双击安装包，开始安装，使用默认配置安装一直点 next  即可，安装路径默认在 C:\Program Fi">
+  <meta name="description" content="Nginx - 源码安装 源码包获取方式： 软件官网获取下载： https:&#x2F;&#x2F;nginx.org&#x2F;en&#x2F;  选择版本，这里选择旧版 1.22.1；右键选择复制链接地址  1wget https:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.22.1.tar.gz 虚拟机终端使用 wget 下载源码包  123456#解压tar xf nginx-1.22.1.tar.gz#创建生成目">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NodeJs的安装及配置环境变量">
-<meta property="og:url" content="https://jiujiu.tj.cn/[object%20Object]/NodeJs%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/index.html">
+<meta property="og:title" content="Centos_Nginx-源码安装">
+<meta property="og:url" content="https://jiujiu.tj.cn/[object%20Object]/Centos-Nginx-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/index.html">
 <meta property="og:site_name" content="山有木兮木有枝，心悦君兮君未知">
-<meta property="og:description" content="NodeJs 的安装及配置环境变量一、Node.js 下载与安装二、Node.js 环境变量配置三、国内镜像网站配置 NodeJs 的安装及配置环境变量 一、Node.js 下载与安装 进入官网地址下载安装包 https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;download&#x2F;  下载完成后，双击安装包，开始安装，使用默认配置安装一直点 next  即可，安装路径默认在 C:\Program Fi">
+<meta property="og:description" content="Nginx - 源码安装 源码包获取方式： 软件官网获取下载： https:&#x2F;&#x2F;nginx.org&#x2F;en&#x2F;  选择版本，这里选择旧版 1.22.1；右键选择复制链接地址  1wget https:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.22.1.tar.gz 虚拟机终端使用 wget 下载源码包  123456#解压tar xf nginx-1.22.1.tar.gz#创建生成目">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/G4fUNm5Y7E2wedO.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/5Q1zPWrGMwqFJ2b.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/tupxgUyVob24YAd.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/3qlmpZxeGjMyvPd.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/HgwljYDMx6eKfAv.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/kUrOGNeQSTHVXlD.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/C7z6I2FesuX8B41.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/rfeTRjlPu7tKZ5Y.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/hZkyBY7NfxvgV2O.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/UIO2jVYy3MorWpG.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/q2iDT5uzG9g6bPp.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/tqIy6naYuxodFLz.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/24ly9qU1HJtLTQG.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/CByTXrl2Hain5Gu.png">
-<meta property="og:image" content="https://s2.loli.net/2023/07/07/S146DyNlwLg5ZXa.png">
-<meta property="article:published_time" content="2023-07-07T08:40:16.000Z">
-<meta property="article:modified_time" content="2023-07-07T09:10:05.901Z">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/EkRQTiOxJ6HlvWq.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/JBl5ZzhEWiItYjc.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/qNpyl95If3vh7XU.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/Dx5nNOa61sPEmt7.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/C7HKhOwXScIDmf8.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/zY9qfl4ai5teDPn.png">
+<meta property="og:image" content="https://s2.loli.net/2023/07/07/QKeuEOsJoXpPRBG.png">
+<meta property="article:published_time" content="2023-07-07T12:49:04.000Z">
+<meta property="article:modified_time" content="2023-07-07T12:49:24.215Z">
 <meta property="article:author" content="酒酒">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s2.loli.net/2023/07/07/G4fUNm5Y7E2wedO.png">
+<meta name="twitter:image" content="https://s2.loli.net/2023/07/07/EkRQTiOxJ6HlvWq.png">
   
   <!-- 站点验证相关 -->
   
@@ -137,15 +129,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://jiujiu.tj.cn/[object%20Object]/NodeJs%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">
+    <link itemprop="mainEntityOfPage" href="https://jiujiu.tj.cn/[object%20Object]/Centos-Nginx-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">NodeJs的安装及配置环境变量</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Centos_Nginx-源码安装</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2023-07-07T08:40:16.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-07-07</time></li>
+                <li><time datetime="2023-07-07T12:49:04.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-07-07</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">酒酒</span>
                 </li>
@@ -154,7 +146,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.53K
+                            1223
                         
                         字
                     </li>
@@ -166,61 +158,35 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1688721005901"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1688734164215"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>NodeJs 的安装及配置环境变量一、Node.js 下载与安装二、Node.js 环境变量配置三、国内镜像网站配置</p>
-<p>NodeJs 的安装及配置环境变量</p>
-<p>一、Node.js 下载与安装</p>
-<p>进入官网地址下载安装包</p>
-<p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p>
-<p><img src="https://s2.loli.net/2023/07/07/G4fUNm5Y7E2wedO.png" alt=""></p>
-<p>下载完成后，双击安装包，开始安装，使用默认配置安装一直点 <code>next</code>  即可，安装路径默认在 <code>C:\Program Files</code>  下，也可以自定义修改</p>
-<p><img src="https://s2.loli.net/2023/07/07/5Q1zPWrGMwqFJ2b.png" alt=""></p>
-<p><img src="https://s2.loli.net/2023/07/07/tupxgUyVob24YAd.png" alt=""></p>
-<p>安装路径默认在 C:\Program Files 下面，也能够自定义修改，而后点击 next</p>
-<p><img src="https://s2.loli.net/2023/07/07/3qlmpZxeGjMyvPd.png" alt=""></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Node.js runtime ：表示运行环境</span><br><span class="line">npm package manager：表示npm包管理器</span><br><span class="line">online documentation shortcuts ：在线文档快捷方式</span><br><span class="line">Add to PATH：添加到环境变量</span><br></pre></td></tr></table></figure>
-<p><img src="https://s2.loli.net/2023/07/07/HgwljYDMx6eKfAv.png" alt=""></p>
-<p>以下图框中所示，我没有选中，而是直接 next</p>
-<p><img src="https://s2.loli.net/2023/07/07/kUrOGNeQSTHVXlD.png" alt=""></p>
-<p>点击 Install，进行安装</p>
-<p><img src="https://s2.loli.net/2023/07/07/C7z6I2FesuX8B41.png" alt=""></p>
-<p>点击 finish，完成安装</p>
-<p><img src="https://s2.loli.net/2023/07/07/rfeTRjlPu7tKZ5Y.png" alt=""></p>
-<p>二、Node.js 环境变量配置</p>
-<p>安装完成后，.msi 格式的安装包已经将 node 启动程序添加到系统环境变量 path 中，咱们能够查看系统变量进行验证：在【设置】→【高级系统设置】</p>
-<p><img src="https://s2.loli.net/2023/07/07/hZkyBY7NfxvgV2O.png" alt=""></p>
-<p>选择环境变量：修改 Path 变量</p>
-<p><img src="https://s2.loli.net/2023/07/07/UIO2jVYy3MorWpG.png" alt=""></p>
-<p><img src="https://s2.loli.net/2023/07/07/q2iDT5uzG9g6bPp.png" alt=""></p>
-<p>选择系统变量，修改 Path</p>
-<p><img src="https://s2.loli.net/2023/07/07/tqIy6naYuxodFLz.png" alt=""></p>
-<p><img src="https://s2.loli.net/2023/07/07/24ly9qU1HJtLTQG.png" alt=""></p>
-<p>查看： 既然已经将 node 程序添加到全局系统变量中，打开 CMD 窗口，执行命令 <code>node -v</code>  查看 node 版本，最新版的 node 在安装时同时也安装了 npm, 执行 <code>npm -v</code>  查看 npm 版本</p>
-<p><img src="https://s2.loli.net/2023/07/07/CByTXrl2Hain5Gu.png" alt=""></p>
-<p>一部分经常使用的命令，以下：</p>
-<ul>
-<li>npm -v：查看 npm 安装的版本。</li>
-<li>npm init：会引导你建立一个 package.json 文件，包括名称、版本、作者等信息。</li>
-<li>npm list：查看当前目录下已安装的 node 包。</li>
-<li>npm ls：查看当前目录下已安装的 node 包。</li>
-<li>npm install moduleNames：安装 Node 模块到本地目录 node_modules 下。</li>
-<li>npm install &lt;name&gt; -g：将包安装到全局环境中。</li>
-<li>npm install &lt;name&gt; --save：安装的同时，将信息写入 package.json 中，项目路径中若是有 package.json 文件时，直接使用 npm install 方法就能够根据 dependencies 配置安装全部的依赖包，这样代码提交到 git 时，就不用提交 node_modules 这个文件夹了。</li>
-<li>npm install &lt;name&gt; --save-dev：安装的同时，将信息写入 package.json 中项目路径中若是有 package.json 文件时，直接使用 npm install 方法就能够根据 devDependencies 配置安装全部的依赖包，这样代码提交到 git 时，就不用提交 node_modules 这个文件夹了。</li>
-<li>npm uninstall moudleName：卸载 node 模块。</li>
-<li>npm config get registry  查看镜像源</li>
-</ul>
-<p>三、国内镜像网站配置</p>
-<p>npm 安装模块时都是去国外的镜像下载的，可是有的时候因为网络等缘由致使安装模块失败，好在阿里有团队维护国内镜像 <a href="https://link.zhihu.com/?target=https%3A//npmmirror.com/">淘宝 NPM 镜像</a></p>
-<p>添加国内镜像源：如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>查看是否更换成功</p>
-<p><img src="https://s2.loli.net/2023/07/07/S146DyNlwLg5ZXa.png" alt=""></p>
+            <div itemprop="articleBody"><p>Nginx - 源码安装</p>
+<p>源码包获取方式：<br>
+软件官网获取下载： <a target="_blank" rel="noopener" href="https://nginx.org/en/">https://nginx.org/en/</a></p>
+<p><img src="https://s2.loli.net/2023/07/07/EkRQTiOxJ6HlvWq.png" alt=""></p>
+<p>选择版本，这里选择旧版 1.22.1；右键选择复制链接地址</p>
+<p><img src="https://s2.loli.net/2023/07/07/JBl5ZzhEWiItYjc.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://nginx.org/download/nginx-1.22.1.tar.gz</span><br></pre></td></tr></table></figure>
+<p>虚拟机终端使用 wget 下载源码包</p>
+<p><img src="https://s2.loli.net/2023/07/07/qNpyl95If3vh7XU.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#解压</span></span><br><span class="line">tar xf nginx-1.22.1.tar.gz</span><br><span class="line"><span class="comment">#创建生成目录</span></span><br><span class="line"><span class="built_in">mkdir</span> /opt/app</span><br><span class="line"><span class="comment">#移动到解压后的Nginx源码包</span></span><br><span class="line"><span class="built_in">cd</span> /root/nginx-1.22.1</span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2023/07/07/Dx5nNOa61sPEmt7.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装依赖</span></span><br><span class="line">yum install -y openssl-devel pcre-devel gcc gcc-c++ glibc -y</span><br><span class="line"><span class="comment">#生成</span></span><br><span class="line">./configure --prefix=/opt/app/nginx-1.22.1 --with-http_ssl_module --with-http_stub_status_module</span><br></pre></td></tr></table></figure>
+<p>生成完成如下</p>
+<p><img src="https://s2.loli.net/2023/07/07/C7HKhOwXScIDmf8.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编译安装（为了让系统能识别你的代码，并且吧刚才指定的功能和路径编辑到源码中）</span></span><br><span class="line">make  &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<p>安装完成如图下：</p>
+<p><img src="https://s2.loli.net/2023/07/07/zY9qfl4ai5teDPn.png" alt=""></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#做软链接</span></span><br><span class="line"><span class="built_in">ln</span> -s /opt/app/nginx-1.22.1 /opt/app/nginx</span><br><span class="line"><span class="comment">#添加环境变量</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&#x27;export PATH=&quot;$PATH:/opt/app/nginx/sbin&quot;&#x27;</span> &gt;&gt; /etc/profile.d/nginx.sh</span><br><span class="line"><span class="comment"># 生效环境变量</span></span><br><span class="line"><span class="built_in">source</span> /etc/profile</span><br></pre></td></tr></table></figure>
+<p>添加系统启动脚本</p>
+<p>vim /usr/lib/systemd/system/nginx.service</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=nginx - high performance web server</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">ExecStartPre=/opt/app/nginx/sbin/nginx -t -c /opt/app/nginx/conf/nginx.conf</span><br><span class="line">ExecStart=/opt/app/nginx/sbin/nginx -c /opt/app/nginx/conf/nginx.conf</span><br><span class="line">ExecReload=/bin/kill -s HUP <span class="variable">$MAINPID</span></span><br><span class="line">ExecStop=/bin/kill -s QUIT <span class="variable">$MAINPID</span></span><br><span class="line">PrivateTmp=<span class="literal">true</span></span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#重新加载文件</span></span><br><span class="line">systemctl daemon-reload</span><br><span class="line"><span class="comment">#授权脚本</span></span><br><span class="line"><span class="built_in">chmod</span> +x /usr/lib/systemd/system/nginx.service</span><br><span class="line"><span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2023/07/07/QKeuEOsJoXpPRBG.png" alt=""></p>
 </div>
         </div>
         
@@ -274,7 +240,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://jiujiu.tj.cn/[object%20Object]/NodeJs%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/",
+                text: "https://jiujiu.tj.cn/[object%20Object]/Centos-Nginx-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -286,13 +252,15 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://jiujiu.tj.cn/[object%20Object]/NodeJs%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/";
-            const title         = "「NodeJs的安装及配置环境变量」";
-            const excerpt       = `NodeJs 的安装及配置环境变量一、Node.js 下载与安装二、Node.js 环境变量配置三、国内镜像网站配置
-NodeJs 的安装及配置环境变量
-一、Node.js 下载与安装
-进入官网地址下载安装包
-https://node...`;
+            const hostUrl       = "https://jiujiu.tj.cn/[object%20Object]/Centos-Nginx-%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85/";
+            const title         = "「Centos_Nginx-源码安装」";
+            const excerpt       = `Nginx - 源码安装
+源码包获取方式：
+软件官网获取下载： https://nginx.org/en/
+
+选择版本，这里选择旧版 1.22.1；右键选择复制链接地址
+
+1wget https://nginx.org/downloa...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -314,7 +282,7 @@ https://node...`;
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-07-07T09:10:05.901Z" itemprop="dateModified">最后编辑：2023-07-07</time>
+                    <time datetime="2023-07-07T12:49:24.215Z" itemprop="dateModified">最后编辑：2023-07-07</time>
                 </div>
             </div>
         </footer>
@@ -323,13 +291,9 @@ https://node...`;
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 基础总结" href="//[object Object]/基础总结/">&lt; 上一篇</a>
+                <a title=" NodeJs的安装及配置环境变量" href="//[object Object]/NodeJs的安装及配置环境变量/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" Centos_Nginx-源码安装" href="//[object Object]/Centos-Nginx-源码安装/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
